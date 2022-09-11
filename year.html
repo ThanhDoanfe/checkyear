@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" id="check">kiem tra nam nhuan</button>
+<script>
+    var check=document.getElementById("check")
+    check.addEventListener("click",checkyear);
+    function checkyear(){
+        let formcheck =parseInt( prompt('please enter year'))
+        if (formcheck != null){
+            if(formcheck%4==0){
+                if(formcheck%100 != 0 )
+                    alert(formcheck + " la nam nhuan")
+                else if(formcheck%100 ==0 && formcheck%400 != 0)
+                    alert(formcheck + " la nam khong nhuan")
+                else
+                    alert(formcheck + " la nam nhuan")
+            }
+            else
+                alert(formcheck + " la nam khong nhuan")
+        }
+    }
+</script>
+</body>
+</html>
