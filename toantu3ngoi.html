@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" id="login">login</button>
+<script>
+  let hix=document.getElementById("login").addEventListener("click",hichic);
+  function hichic(){
+    let login=prompt("Enter=");
+    let ms=(login== "Emloyee") ? 'hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'no login ' : '';
+    alert(ms);
+  }
+</script>
+</body>
+</html>
